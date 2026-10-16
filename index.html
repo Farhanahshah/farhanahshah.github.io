@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Farhanah Shah | Data Analyst</title>
+<meta name="description" content="Data Analyst in Dubai, UAE. SQL, Python, Power BI and Tableau dashboards and analytics projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f8ff;--surface:#fff;--text:#11213a;--muted:#5a6a85;--primary:#2563eb;--primary-soft:#e3ecff;--accent:#14b8a6;--border:#e0e8f6;--shadow:0 10px 30px rgba(37,99,235,.10)}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1324;--surface:#131f38;--text:#e8eefb;--muted:#9aabc6;--primary:#6ea0ff;--primary-soft:#1a2b50;--accent:#2dd4bf;--border:#22345a;--shadow:0 10px 30px rgba(0,0,0,.35)}}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65;overflow-x:hidden}
+h1,h2,h3,.brand{font-family:"Space Grotesk",Inter,sans-serif}
+a{color:var(--primary);text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{font-weight:700;font-size:1.15rem;color:var(--text)}.brand span{color:var(--primary)}
+nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0;overflow-x:auto}
+nav ul a{display:block;color:var(--muted);font-weight:500;font-size:.9rem;padding:7px 13px;border-radius:99px;white-space:nowrap;transition:.2s}
+nav ul a:hover,nav ul a.on{color:var(--primary);background:var(--primary-soft)}
+section{padding:84px 0}
+.eyebrow{display:inline-block;color:var(--primary);background:var(--primary-soft);font-weight:600;font-size:.8rem;letter-spacing:.04em;padding:6px 14px;border-radius:99px}
+.section-title{font-size:clamp(1.7rem,4vw,2.3rem);margin:12px 0 8px;letter-spacing:-.02em}
+.section-sub{color:var(--muted);margin:0 0 38px;max-width:620px}
+#hero{padding:90px 0 80px;position:relative;overflow:hidden}
+#hero::before,#hero::after{content:"";position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;z-index:0}
+#hero::before{width:420px;height:420px;background:var(--primary-soft);top:-120px;right:-80px}
+#hero::after{width:300px;height:300px;background:color-mix(in srgb,var(--accent) 25%,transparent);bottom:-120px;left:-60px}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.4fr .8fr;gap:40px;align-items:center}
+#hero h1{font-size:clamp(2.4rem,6.5vw,4rem);line-height:1.08;margin:18px 0 14px;letter-spacing:-.03em}
+#hero h1 span{background:linear-gradient(90deg,var(--primary),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.tagline{color:var(--muted);font-size:1.15rem;max-width:560px;margin:0 0 28px}
+.btn{display:inline-block;background:var(--primary);color:#fff;padding:13px 26px;border-radius:12px;font-weight:600;border:0;cursor:pointer;font-family:inherit;font-size:1rem;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(37,99,235,.3)}
+.btn.ghost{background:transparent;color:var(--primary);border:1.5px solid var(--primary);margin-left:10px}
+.btn.ghost:hover{background:var(--primary-soft);box-shadow:none}
+.avatar{justify-self:center;width:230px;height:230px;border-radius:50%;display:grid;place-items:center;font-family:"Space Grotesk",Inter,sans-serif;font-size:4.4rem;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--primary),var(--accent));box-shadow:var(--shadow);position:relative}
+.avatar::after{content:"";position:absolute;inset:-12px;border-radius:50%;border:2px dashed var(--primary);opacity:.35}
+.stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:12px 20px}
+.stat b{display:block;font-family:"Space Grotesk",Inter,sans-serif;font-size:1.5rem;color:var(--primary);line-height:1.2}.stat small{color:var(--muted)}
+#about p{max-width:780px;color:var(--muted);font-size:1.06rem;margin:0 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:26px;transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--primary)}
+.ico{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:1.5rem;background:var(--primary-soft);margin-bottom:14px}
+.card h3{margin:0 0 10px;font-size:1.1rem}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{background:var(--primary-soft);color:var(--primary);font-size:.8rem;font-weight:600;padding:5px 12px;border-radius:99px}
+.timeline{border-left:2px solid var(--border);margin-left:8px;padding-left:28px}
+.job{position:relative;margin-bottom:26px}
+.job::before{content:"";position:absolute;left:-37px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--primary);border:3px solid var(--bg)}
+.job h3{margin:0;font-size:1.1rem}.job small{color:var(--muted)}.job p{margin:6px 0 0;color:var(--muted)}
+.pcard{cursor:pointer;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.pcard::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:linear-gradient(90deg,var(--primary),var(--accent));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.pcard:hover::before,.pcard:focus-visible::before{transform:scaleX(1)}
+.pcard:focus-visible{outline:2px solid var(--primary)}
+.pcard p{color:var(--muted);font-size:.94rem;margin:8px 0 14px}
+.pcard ul{margin:0 0 16px;padding-left:18px;font-size:.9rem}
+.more{margin-top:auto;font-weight:600;font-size:.9rem;color:var(--primary)}
+.port-card{display:block;background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:26px;color:var(--text);transition:transform .25s,box-shadow .25s,border-color .25s}
+.port-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--primary)}
+.port-icon-wrap{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:1.6rem;margin-bottom:14px}
+.port-title{font-family:"Space Grotesk",Inter,sans-serif;font-weight:600;font-size:1.1rem}.port-desc{color:var(--muted);font-size:.93rem;margin:6px 0 12px}
+.port-link-txt{color:var(--primary);font-weight:600;font-size:.92rem}
+.contact-box{background:linear-gradient(135deg,var(--primary),#1e40af);color:#fff;border-radius:24px;padding:44px 34px;text-align:center}
+.contact-box h2{margin:0 0 8px;font-size:1.9rem}.contact-box p{margin:0 0 24px;opacity:.9}
+.contact-box .btn{background:#fff;color:#1e40af;margin:5px}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:30px 0 44px}
+.fade-in{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.fade-in.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.fade-in{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+#detail{display:none;padding:46px 0 80px}
+.back{background:none;border:0;color:var(--primary);font:inherit;font-weight:600;cursor:pointer;padding:0;margin-bottom:22px}
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:24px;margin-bottom:18px}
+.panel h4{margin:0 0 10px}.panel p{margin:0;color:var(--muted)}.panel ul{margin:0;padding-left:18px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}.two .panel{margin:0}
+@media(max-width:780px){.hero-grid{grid-template-columns:1fr}.avatar{width:150px;height:150px;font-size:2.8rem;order:-1;justify-self:start}.two{grid-template-columns:1fr}.btn.ghost{margin:10px 0 0}nav .brand{display:none}section{padding:64px 0}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="#top">Farhanah<span>.</span></a>
+<ul id="menu"><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#work">Links</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<main id="home">
+<section id="hero"><div class="wrap hero-grid">
+<div class="fade-in"><span class="eyebrow">Data Analyst &middot; Dubai, UAE</span>
+<h1>Hi, I'm <span>Farhanah Shah</span></h1>
+<p class="tagline">Transforming data into actionable insights through dashboards and analytics</p>
+<a class="btn" href="#projects">View My Projects</a><a class="btn ghost" href="#contact">Get in Touch</a>
+<div class="stats"><div class="stat"><b>6</b><small>Projects</small></div><div class="stat"><b>3</b><small>Analyst roles</small></div><div class="stat"><b>4</b><small>Core tools</small></div></div></div>
+<div class="avatar fade-in" aria-hidden="true">FS</div>
+</div></section>
+
+<section id="about"><div class="wrap fade-in">
+<span class="eyebrow">About</span><h2 class="section-title">About Me</h2>
+<p>I am an aspiring Data Analyst with hands-on experience in SQL, Python, Tableau, Power BI, and Microsoft Power Platform.</p>
+<p>I specialize in building interactive dashboards and analyzing business data to generate insights that support decision-making.</p>
+<p>I completed a KHDA-approved Data Analytics program and internship in Dubai, and I am currently looking for opportunities to apply my analytical and visualization skills in a real-world business environment.</p>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<div class="fade-in"><span class="eyebrow">Skills</span><h2 class="section-title">Tools I Work With</h2><p class="section-sub">From raw data to a dashboard people can act on.</p></div>
+<div class="grid" id="skillGrid"></div></div></section>
+
+<section id="experience"><div class="wrap">
+<div class="fade-in"><span class="eyebrow">Experience</span><h2 class="section-title">Where I've Worked</h2></div>
+<div class="timeline fade-in">
+<div class="job"><h3>MIS Analyst</h3><small>PACT Employment Services, Dubai &middot; Sep 2025 &ndash; Present</small><p>Builds daily, weekly, and monthly MIS reports that track sales performance and KPIs against targets.</p></div>
+<div class="job"><h3>Data Analytics Intern</h3><small>KGISL Institute, Dubai &middot; Jan 2026 &ndash; Jul 2026</small><p>KHDA-approved program covering SQL, Power BI, Tableau, Python, and Advanced Excel.</p></div>
+<div class="job"><h3>Reporting Analyst</h3><small>Groflux Solutions, Pune, India &middot; Jul 2023 &ndash; Jul 2025</small><p>Cleaned and validated data with Excel and SQL, and built Power BI dashboards and KPI reports.</p></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap">
+<div class="fade-in"><span class="eyebrow">Projects</span><h2 class="section-title">Featured Projects</h2><p class="section-sub">Select a project to see the business question, approach, and impact.</p></div>
+<div class="grid" id="projectGrid"></div></div></section>
+
+<section id="work"><div class="wrap">
+<div class="fade-in"><span class="eyebrow">Links</span><h2 class="section-title">View My Work</h2><p class="section-sub">Code, dashboards and my professional profile.</p></div>
+<div class="grid">
+<a href="https://github.com/Farhanahshah" target="_blank" rel="noopener" class="port-card fade-in"><div class="port-icon-wrap" style="background:#e8edf8"><span>&#128187;</span></div><div class="port-title">GitHub</div><div class="port-desc">View SQL scripts, Python notebooks, dashboard files and project source code.</div><span class="port-link-txt">Visit GitHub &rarr;</span></a>
+<a href="https://www.linkedin.com/in/farhanah-s-333236414/" target="_blank" rel="noopener" class="port-card fade-in" style="transition-delay:.12s"><div class="port-icon-wrap" style="background:#e3f0ff"><span>&#128188;</span></div><div class="port-title">LinkedIn</div><div class="port-desc">See my experience, certifications and professional background.</div><span class="port-link-txt">View Profile &rarr;</span></a>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="contact-box fade-in">
+<h2>Let's Work Together</h2><p>I'm open to entry-level Data Analyst opportunities in the UAE.</p>
+<a class="btn" href="mailto:farus9145@gmail.com">farus9145@gmail.com</a><a class="btn" target="_blank" rel="noopener" href="https://www.linkedin.com/in/farhanah-s-333236414/">LinkedIn</a><a class="btn" target="_blank" rel="noopener" href="https://github.com/Farhanahshah">GitHub</a>
+</div></div></section>
+</main>
+
+<main id="detail"><div class="wrap" id="detailBody"></div></main>
+<footer>&copy; 2026 Farhanah Shah &middot; Dubai, UAE</footer>
+
+<script>
+var skills=[["&#128451;","Query & Programming",["SQL","MySQL","Python","Pandas","NumPy"]],["&#128202;","Dashboards",["Power BI","Tableau","DAX","Power Query"]],["&#128216;","Spreadsheets",["Advanced Excel","Pivot Tables","XLOOKUP"]],["&#129529;","Analytics",["Data Cleaning","Validation","EDA","Reporting"]]];
+var projects=[
+{t:"E-commerce Product & Review Analysis",tag:"Python, MySQL, Power BI",d:"Scraped e-commerce product data and turned it into a Power BI dashboard on pricing, ratings, and category trends.",h:["Scraped product data with Python","Stored and analyzed it in MySQL","Built a Power BI dashboard with KPIs and slicers"],
+ q:"Which categories, price points, and ratings stand out across an e-commerce site's products?",
+ b:"Scraped product names, prices, ratings, availability, categories, and URLs with Python; cleaned the data in Pandas, loaded it into MySQL, analyzed it with SQL, and built a Power BI dashboard with KPIs, slicers, and an insights page.",
+ i:["Turned unstructured web data into a clean database ready for analysis","Showed pricing, rating, and category trends at a glance in one dashboard","Delivered the full pipeline end to end: collection, cleaning, storage, analysis, and visualization"],g:"https://github.com/Farhanahshah/ecommerce-product-review-analysis"},
+{t:"Laptop Price Analysis",tag:"Python, Pandas, NumPy, Matplotlib",d:"Exploratory analysis of 1,245 laptop records to find what drives laptop prices.",h:["Cleaned data and treated outliers","Engineered features from specs","Compared price drivers with visuals"],
+ q:"What factors influence the price of a laptop?",
+ b:"Cleaned 1,245 laptop records (missing values, outliers, validation), engineered features such as storage, screen resolution, touchscreen, and CPU speed, then ran correlation and comparative analysis with Matplotlib visuals.",
+ i:["Identified RAM, storage, GPU, screen resolution, and brand as factors influencing price","Turned raw specifications into usable features for analysis","Presented findings in clear visuals for non-technical readers"],g:"https://github.com/Farhanahshah/laptop-price-analysis"},
+{t:"HR Analytics Dashboard",tag:"Power BI",d:"Power BI dashboard on employee attrition, salary, department performance, and demographics.",h:["Cleaned HR data in Power Query","Created DAX measures for KPIs","Surfaced workforce trends"],
+ q:"Why are employees leaving, and which groups are most affected?",
+ b:"Cleaned and transformed HR datasets in Power Query, created DAX measures for key workforce KPIs, and designed a dashboard covering attrition, salary, department performance, and demographics.",
+ i:["Gave HR one view of attrition, salary, and department performance","Surfaced workforce trends to support decision-making","Made HR metrics easy to track with reusable KPI measures"],g:"https://github.com/Farhanahshah/hr-analytics-dashboard"},
+{t:"Sales Performance Dashboard",tag:"Tableau",d:"Interactive Tableau dashboard tracking revenue, profit, and regional performance with dynamic KPIs.",h:["Tracked revenue and profit","Compared regional performance","Added dynamic KPIs and drill-down"],
+ q:"Where is revenue growing, and which regions drive profit?",
+ b:"Built an interactive Tableau dashboard covering revenue, profit, and regional performance, with dynamic KPIs and drill-down views.",
+ i:["Analyzed sales trends to support business reporting and decision-making","Made regional performance easy to compare","Gave stakeholders one interactive view instead of static reports"],g:"https://github.com/Farhanahshah/sales-performance-dashboard"},
+{t:"Movies Database Analysis",tag:"SQL (MySQL)",d:"SQL analysis of a movies database with 7,997 titles covering genres, ratings, release trends, actors, and directors.",h:["24 queries across 6 tables","JOINs, subqueries, CASE WHEN","Genre, rating, and release trends"],
+ q:"What does a database of 7,997 movies reveal about genres, ratings, release patterns, and the people behind them?",
+ b:"Wrote 24 MySQL queries across six tables (movie, genre, ratings, names, role and director mappings) using JOINs, subqueries, CASE WHEN, GROUP BY, HAVING, and aggregate functions.",
+ i:["Found Drama to be the most common genre, with 4,285 titles","Showed Action as the longest genre on average (about 113 minutes) and Horror as the shortest (about 93)","Identified Marvel Studios as the production company with the most total votes","Profiled missing data, such as worldwide gross income absent for 3,724 movies"],g:"https://github.com/Farhanahshah/movies-sql-analysis"},
+{t:"Customer Analytics Dashboard",tag:"Tableau",d:"Tableau dashboards analyzing customer behavior and purchasing trends.",h:["Analyzed customer behavior","Tracked purchasing trends","Built interactive visualizations"],
+ q:"How do customers behave, and what are their purchasing trends?",
+ b:"Built Tableau dashboards with interactive visualizations to analyze customer behavior and purchasing trends for business reporting.",
+ i:["Showed customer behavior and purchasing trends in interactive dashboards","Supported business reporting with clear, filterable views","Helped teams spot patterns in how customers buy"],g:"https://github.com/Farhanahshah/customer-analytics-dashboard"}];
+var sg=document.getElementById("skillGrid");
+skills.forEach(function(s,i){sg.insertAdjacentHTML("beforeend","<div class='card fade-in' style='transition-delay:"+i*.1+"s'><div class='ico'>"+s[0]+"</div><h3>"+s[1]+"</h3><div class='chips'>"+s[2].map(function(c){return"<span class='chip'>"+c+"</span>"}).join("")+"</div></div>")});
+var pg=document.getElementById("projectGrid");
+projects.forEach(function(p,n){pg.insertAdjacentHTML("beforeend","<article class='card pcard fade-in' tabindex='0' role='link' data-n='"+n+"' style='transition-delay:"+(n%3)*.1+"s'><span class='chip' style='align-self:flex-start'>"+p.tag+"</span><h3 style='margin-top:12px'>"+p.t+"</h3><p>"+p.d+"</p><ul>"+p.h.map(function(x){return"<li>"+x+"</li>"}).join("")+"</ul><span class='more'>View details &rarr;</span></article>")});
+pg.addEventListener("click",function(e){var c=e.target.closest(".pcard");if(c)location.hash="/project/"+c.dataset.n});
+pg.addEventListener("keydown",function(e){if(e.key==="Enter"){var c=e.target.closest(".pcard");if(c)location.hash="/project/"+c.dataset.n}});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
+function watch(){document.querySelectorAll(".fade-in:not(.in)").forEach(function(el){io.observe(el)})}watch();
+var links=[].slice.call(document.querySelectorAll("#menu a"));
+var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id)})}})},{rootMargin:"-45% 0px -50% 0px"});
+["about","skills","experience","projects","work","contact"].forEach(function(id){so.observe(document.getElementById(id))});
+function route(){
+ var m=location.hash.match(/^#\/project\/(\d)$/),home=document.getElementById("home"),det=document.getElementById("detail");
+ if(m&&projects[m[1]]){var n=+m[1],p=projects[n],nx=projects[(n+1)%projects.length];
+  home.style.display="none";det.style.display="block";
+  document.getElementById("detailBody").innerHTML="<button class='back' id='bk'>&larr; Back to projects</button><br><span class='chip'>"+p.tag+"</span><h2 class='section-title'>"+p.t+"</h2><p class='section-sub'>"+p.d+"</p>"+
+  "<div class='two'><div class='panel'><h4>Business question</h4><p>"+p.q+"</p></div><div class='panel'><h4>What I built</h4><p>"+p.b+"</p></div></div>"+
+  "<div class='panel'><h4>Impact</h4><ul>"+p.i.map(function(x){return"<li>"+x+"</li>"}).join("")+"</ul></div>"+
+  "<div class='panel'><h4>Key highlights</h4><ul>"+p.h.map(function(x){return"<li>"+x+"</li>"}).join("")+"</ul></div>"+
+  "<div class='panel'><h4>Tools</h4><p>"+p.tag+"</p></div>"+
+  "<div class='panel'><h4>Code and files</h4><p><a href='"+p.g+"' target='_blank' rel='noopener'>View this project on GitHub &rarr;</a></p></div>"+
+  "<button class='btn' id='nx'>Next: "+nx.t+" &rarr;</button>";
+  document.getElementById("bk").onclick=function(){location.hash="projects"};
+  document.getElementById("nx").onclick=function(){location.hash="/project/"+((n+1)%projects.length)};
+  window.scrollTo(0,0);
+ }else{
+  var was=det.style.display==="block";det.style.display="none";home.style.display="block";watch();
+  var id=location.hash.slice(1),el=id&&document.getElementById(id);
+  setTimeout(function(){if(el)el.scrollIntoView();else if(was)window.scrollTo(0,0)},0);
+ }
+}
+window.addEventListener("hashchange",route);route();
+</script>
+</body>
+</html>
